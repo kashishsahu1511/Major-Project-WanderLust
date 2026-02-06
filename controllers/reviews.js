@@ -12,8 +12,7 @@ await newReview.save();
 await listing.save();
 req.flash("success", "Created new review");
 res.redirect(`/listings/${listing._id}`)
-// console.log("new review saved");
-// res.send("new review saved");
+
 
 };
 

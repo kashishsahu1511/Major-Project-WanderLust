@@ -17,12 +17,12 @@ module.exports.signup = async (req,res)=>{
         req.flash("success", "Welcome to WanderLust !");
         res.redirect("/listings");
     });
-}
-catch(e){
+    }
+    catch(e){
     req.flash("error", e.message);
     console.log(e);
     res.redirect("/signup");
-}
+    }
 };
 
 module.exports.renderLoginForm = (req,res)=>{
@@ -38,7 +38,6 @@ res.redirect(redirectUrl);
 
 module.exports.Logout = (req,res)=>{
     req.logout((err)=>{
-
         if(err){
           return next(err);
         }

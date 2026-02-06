@@ -1,12 +1,10 @@
 
-    
-
     mapboxgl.accessToken = mapToken
     const map = new mapboxgl.Map({
         container : 'map',
         center: coordinates, // starting position [lng, lat]. Default to New Delhi   listing.geometry.coordinates
         zoom: 9 // starting zoom
-    });
+        });
 
     console.log(coordinates);
 
